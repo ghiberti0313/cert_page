@@ -1,0 +1,6 @@
+alter table tab_registro add constraint FKtest foreign key (id_usuario) references tab_Usuarios(id_usuario)
+
+insert into tab_usuarios (usr_nombre, usr_pass, you_admin, id_nivel) values ('Miguel', 'zaq12wsx', true, 2)
+
+ALTER TABLE public.tab_usuarios
+    ADD COLUMN "ap_materno" varchar NOT NULL default 0;
